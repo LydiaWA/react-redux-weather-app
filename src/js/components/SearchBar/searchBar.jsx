@@ -48,7 +48,7 @@ export default class SearchBar extends React.Component {
                     <button value="London" type="button" className="btn btn-secondary" onClick={this.handleQuickLink}>London</button>
                     <button value="Tokyo" type="button" className="btn btn-secondary" onClick={this.handleQuickLink}>Tokyo</button>
                 </div>
-
+            
                 <div className="input-group mb-3">
                     <input 
                         type="text" 
@@ -59,19 +59,19 @@ export default class SearchBar extends React.Component {
                         value={ input }
                         onChange={ this.handleCityNameInput }
                         />
-                <div className="input-group-append">
-                    <button 
-                        className="btn btn-outline-secondary" 
-                        type="button" 
-                        id="button-addon2"
-                        onClick={ this.handleSearch }
-                        >Go!
-                    </button>
-                    { error &&
-                        <p className='error-message'>{ error.message }</p>}
+                    
+                    <div className="input-group-append">
+                        <button 
+                            className="btn btn-outline-secondary" 
+                            type="button" 
+                            id="button-addon2"
+                            onClick={ this.handleSearch }
+                            >Go!
+                        </button>
+                    { error && <p className='error-message'>{ error.message }</p>}
                     </div>
-            </div>
-          </div>
+                </div>
+            </div> 
         );
     }
 }

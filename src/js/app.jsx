@@ -13,7 +13,7 @@ export default class App extends React.Component {
           <p>Always know if you'll need an umbrella!</p>
         </div>
 
-        <div className='row'>
+        <div>
           <SearchBar />
         </div>
 
