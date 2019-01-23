@@ -13,5 +13,3 @@ export function searchCityWeather(input) {
         payload: axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + input + '&APPID=9ab69921920d3fd09542e26861474879' + '&units=imperial')
     }
 }
-
-

@@ -7,17 +7,14 @@ export default class CityInfo extends React.Component {
 
     render() {
         const { cityInfo } = this.props;
-        console.log("props in cityInfo", this.props)
         return (
             <div className='card border-info mb-3'>
                 <div className='card-header bg-info'>City Info</div>
                 <div className='card-body text-center'>
                     <h5 className='card-title'>{cityInfo.name && cityInfo.name}</h5>
                     <h6 className='card-subtitle'>
-    
-                    { !cityInfo.name ? 'Coordinates' : `Lat/Lng: ${cityInfo.coord.lat}, ${cityInfo.coord.lon}` }
+                        { !cityInfo.name ? 'Coordinates' : `Lat/Lng: ${cityInfo.coord.lat}, ${cityInfo.coord.lon}` }
                     </h6>
-                        
                     <hr/>
                     <div className='row'>
                         <div className='col-4'>
@@ -49,12 +46,9 @@ export default class CityInfo extends React.Component {
                             <h6>Wind Speed</h6>
                             <p className='text-success'>{ cityInfo.name && `${cityInfo.wind.speed}mph` }</p>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-
         );
-
     }
 }
