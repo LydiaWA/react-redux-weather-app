@@ -5,3 +5,5 @@ $ npm install
 
 # start the server
 $ npm run dev && npm start
+
+[![CircleCI](https://circleci.com/gh/LydiaWA/react-redux-weather-app.svg?style=svg)](https://circleci.com/gh/LydiaWA/react-redux-weather-app)
