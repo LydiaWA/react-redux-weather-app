@@ -10,6 +10,6 @@ export function updateCityInput(input) {
 export function searchCityWeather(input) {
     return {
         type: 'SEARCH_CITY',
-        payload: axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + input + '&APPID=9ab69921920d3fd09542e26861474879' + '&units=imperial')
+        payload: axios.get('https://api.openweathermap.org/data/2.5/weather?q=' + input + '&APPID=9ab69921920d3fd09542e26861474879' + '&units=imperial')
     }
 }
